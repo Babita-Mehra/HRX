@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="angle-down" transform="translate(-378 -334)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="32" height="32" transform="translate(378 334)" fill="none"/>
+    <g id="directional" transform="translate(382 338)">
+      <g id="arrow-down">
+        <path id="Shape" d="M6,7l6,6,6-6,2,2-8,8L4,9Z" fill="#0f4c83" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>
