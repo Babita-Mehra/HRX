@@ -246,7 +246,7 @@
     margin-top: -40px;
   }
   .footer .foot_media li {
-    margin-right: 15px !important;
+    margin-right: 0px !important;
   }
   .back_next_posts .next_link {
     position: static;
@@ -838,6 +838,12 @@
     padding-left: 40px;
     padding-right: 0px;
   }
+  .footer-content .footmenu ul li {
+    padding: 0px;
+  }
+  .bottom-section-wrap {
+    padding-top: 0px;
+  }
   #conference-timeline .timeline-article .content-left p, #conference-timeline .timeline-article .content-right p, #conference-timeline .timeline-article.even h5 {
     max-width: 100% !important;
   }
@@ -1157,12 +1163,15 @@
     padding-bottom: 30px;
     justify-content: center;
   }
+  .navbar-collapse.collapsing {
+    transition: height 0.35s ease;
+  }
   .main_header .navbar-collapse {
     margin-top: 76px;
     min-width: calc(100% + 48px);
     margin-left: -24px;
     padding: 0px;
-    height: calc(100vh - 106px - 64px);
+    /* height: calc(100vh - 106px - 64px);*/
     background-color: #FBF4E4;
     overflow: auto;
     padding-bottom: 24px;
