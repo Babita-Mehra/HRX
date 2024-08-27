@@ -774,6 +774,9 @@
 .story-wrap .col-md-3, .img_button_row .col-md-3, .news-meeting-row.row .col-md-3{max-width: 100%;}
 }
 @media (max-width:991px) {
+    .location-wrap .col-md-3, .location-wrap .col-md-6 {
+        padding: 0px 9px 10px;
+    }
     .form-wrap .row .fr-wrap {
        
         display: block;

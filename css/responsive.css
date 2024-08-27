@@ -739,6 +739,9 @@
   }
 }
 @media (max-width: 991px) {
+  .location-wrap .col-md-3, .location-wrap .col-md-6 {
+    padding: 0px 9px 10px;
+  }
   .form-wrap .row .fr-wrap {
     display: block;
   }
