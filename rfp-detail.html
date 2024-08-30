@@ -38,7 +38,6 @@
                            <div class="search-box">
                               <div class="search_input">
                                  <form role="search" method="get" id="">
-                                   
                                     <div class="input-group">
                                        <input type="text" id="" class="form-control" placeholder="Search" name="s">
                                        <button class="btn btn-default" id="" type="submit">
@@ -143,36 +142,28 @@
                </nav>
             </div>
          </div>
-        
       </div>
       <div class="main_wrapper" style="">
-         
          <div class="repf-detail">
             <div class="container">
                <div class="repf-info">
                   <h2>
                      Adult Residential Facility 4I Forensic
                   </h2>
-                 
                   <div class="repf-cont accpanel">
                      <div class="num">HRC-2325-5</div>
                      <p>
                         <b> Status:</b> Open
-                      </p>
-                      <h4>Project Summary</h4>
+                     </p>
+                     <h4>Project Summary</h4>
                      <p>Welcome to the Lorem Ipsum Generator Pro, the ultimate source of placeholder text for all your design needs. Whether you're creating a website, designing a brochure, or crafting the next great novel, our nonsensical text will help you fill in those empty spaces with style.</p>
                      <h4>Project Summary</h4>
                      <p>Friday, February 16, 2024</p>
-
                      <div class="document_era">
                         <a href="#" class="doc_block"> <img src="img/PDF.svg" alt="pdf"> <span>View Proposal</span> </a>
                         <a href="#" class="doc_block"> <img src="img/PDF.svg" alt="pdf"> <span>View Full Notice</span> </a>
                      </div>
-
                   </div>
-
-
-                 
                </div>
             </div>
          </div>
@@ -188,12 +179,13 @@
                      <div class="address">
                         123, 4th St, <br>
                         5th Floor,<br>
-                       City, ST, 12345
+                        City, ST, 12345
                      </div>
                      <div class="ph">
-                       <a href="#">(123) 234 345</a> </div>
-                       <div class="dir"> <a href="#">Get Directions</a>
-                  </div>
+                        <a href="#">(123) 234 345</a> 
+                     </div>
+                     <div class="dir"> <a href="#">Get Directions</a>
+                     </div>
                   </div>
                   <div class="foot_col col-md-10">
                      <div class="footmenu ">
@@ -205,26 +197,23 @@
                            <li> <a href="# ">Contact Us</a></li>
                         </ul>
                      </div>
-                     
-                     
                   </div>
-                  
                </div>
-
-               <div class="bottom-socil-links"><div class="foot_media ">
-                  <ul>
-                     <li>
-                        <a href=""><img src="img/facebook.svg" alt=""> </a>
-                     </li>
-                     <li>
-                        <a href=""><img src="img/instagram.svg" alt=""> </a>
-                     </li>
-                     <li>
-                        <a href=""><img src="img/twitter.svg" alt=""> </a>
-                     </li>
-                    
-                  </ul>
-               </div></div>
+               <div class="bottom-socil-links">
+                  <div class="foot_media ">
+                     <ul>
+                        <li>
+                           <a href=""><img src="img/facebook.svg" alt=""> </a>
+                        </li>
+                        <li>
+                           <a href=""><img src="img/instagram.svg" alt=""> </a>
+                        </li>
+                        <li>
+                           <a href=""><img src="img/twitter.svg" alt=""> </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
          </div>
       </footer>
@@ -251,12 +240,20 @@
          $(document).ready(function() {
             if (window.matchMedia('(max-width: 1199.9px)').matches) {
                // Get the top_search element
-               var topSearch = $(".top_search");
-               var topcontact = $(".top_header_cont");
+               var topSearch = $(".navbar-collapse .select_language");
                // Move top_search outside of nav_bottom
-               $(".nav_bottom").after(topSearch);
-               $(".nav_bottom").after(topcontact);
+               $(".navbar-collapse .nav_bottom.mobile-view").after(topSearch);
+               $(".navbar-collapse .nav_bottom.mobile-view").after(topcontact);
             }
+         });
+         $(document).ready(function() {
+            $('.navbar-toggler').on('click', function() {
+               if ($('.navbar-toggler').attr('aria-expanded') === 'false') {
+                  $('.navbar-toggler').parent().addClass('navbar-open');
+               } else {
+                  $('.navbar-toggler').parent().removeClass('navbar-open');
+               }
+            });
          });
       </script>
    </body>
